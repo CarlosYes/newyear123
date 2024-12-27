@@ -1,0 +1,244 @@
+@media screen and (max-width : 600px) {
+  
+  
+    .text-scroll p { font-size:20px!important;padding-left:10px;}
+   .scrolling-words p { font-size:20px!important;padding-left:10px;}
+  
+  .btn { font-size:20px!important;padding-left:10px;position:relative;bottom:30px;}
+}
+
+
+
+* {
+font-family: 'fantasy', sans-serif;
+}
+
+  /*******************************
+  ROLLING TEXT KEYFRAME
+  ********************************/
+ 
+  .text-scroll p {
+    height: 20px;
+    float: center;
+    white-space: nowrap;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #ff00ff;
+  color: orange;;
+  }
+
+  .text-scroll {
+    max-height: 50px;
+    max-width: 950px;
+    padding-top: 90px;
+    margin: 0 auto;
+    float: center;
+    
+  }
+
+  .scrolling-words {
+    overflow:hidden;
+    height:54px;
+    
+  }
+
+  .scrolling-words  p {
+    margin: 0 0 30px;
+    padding-top: 5px;
+    white-space: nowrap;
+    -webkit-animation: move 40s 1.5s infinite;
+    -moz-animation: move 40s 1.5s infinite;
+    -o-animation: move 40s 1.5s infinite;
+    -ms-animation: move 40s 1.5s infinite;
+    animation: move 40s 1.5s infinite;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color:#00ffff;
+     
+  }
+
+  @-moz-keyframes move {
+    0%  { top:  0px;   }
+    6% { top: -55px;  }
+    12% { top: -110px;  }
+    18% { top: -165px; }
+    24% { top: -220px; }
+    30% { top: -275px; }
+    36% { top: -330px; }
+    42% { top: -385px; }
+    48% { top: -440px; }
+    54% { top: -495px; }
+    60% { top: -550px; }
+    66% { top: -605px; }
+    72% { top: -660px; }
+    78% { top: -715px; }
+    84% { top: -770px; }
+    90% { top: -825px; }
+    96% { top: -880px; }
+    100% { top: -0px;   }
+  }
+
+  @-o-keyframes move {
+    0%  { top:  0px;   }
+    6% { top: -55px;  }
+    12% { top: -110px;  }
+    18% { top: -165px; }
+    24% { top: -220px; }
+    30% { top: -275px; }
+    36% { top: -330px; }
+    42% { top: -385px; }
+    48% { top: -440px; }
+    54% { top: -495px; }
+    60% { top: -550px; }
+    66% { top: -605px; }
+    72% { top: -660px; }
+    78% { top: -715px; }
+    84% { top: -770px; }
+    90% { top: -825px; }
+    96% { top: -880px; }
+    100% { top: -0px;   }
+  }
+
+ @-ms-keyframes move {
+    0%  { top:  0px;   }
+    6% { top: -55px;  }
+    12% { top: -110px;  }
+    18% { top: -165px; }
+    24% { top: -220px; }
+    30% { top: -275px; }
+    36% { top: -330px; }
+    42% { top: -385px; }
+    48% { top: -440px; }
+    54% { top: -495px; }
+    60% { top: -550px; }
+    66% { top: -605px; }
+    72% { top: -660px; }
+    78% { top: -715px; }
+    84% { top: -770px; }
+    90% { top: -825px; }
+    96% { top: -880px; }
+    100% { top: -0px;   }
+  }
+
+  @-webkit-keyframes move {
+    0%  { top:  0px;   }
+    6% { top: -55px;  }
+    12% { top: -110px;  }
+    18% { top: -165px; }
+    24% { top: -220px; }
+    30% { top: -275px; }
+    36% { top: -330px; }
+    42% { top: -385px; }
+    48% { top: -440px; }
+    54% { top: -495px; }
+    60% { top: -550px; }
+    66% { top: -605px; }
+    72% { top: -660px; }
+    78% { top: -715px; }
+    84% { top: -770px; }
+    90% { top: -825px; }
+    96% { top: -880px; }
+    100% { top: -0px;   }
+  }
+
+  @keyframes move {
+    0%  { top:  0px;   }
+    6% { top: -55px;  }
+    12% { top: -110px;  }
+    18% { top: -165px; }
+    24% { top: -220px; }
+    30% { top: -275px; }
+    36% { top: -330px; }
+    42% { top: -385px; }
+    48% { top: -440px; }
+    54% { top: -495px; }
+    60% { top: -550px; }
+    66% { top: -605px; }
+    72% { top: -660px; }
+    78% { top: -715px; }
+    84% { top: -770px; }
+    90% { top: -825px; }
+    96% { top: -880px; }
+    100% { top: -0px;   }
+  }
+  /*******************************/
+
+
+
+
+
+
+
+
+
+/* Here Is The CSS For The Background*/
+
+/* An Overlay To Dim The Image And Make Text Readable*/
+#color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ff0000, #);
+  opacity: 0.7; 
+  z-index: -1;
+}
+
+/* Setup For An Image That Fits On Most Screens And Resizes*/ 
+.with-bg-size { 
+  background-image: url("https://i.imgur.com/QYRFJnv.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  
+  
+  -webkit-animation: back 40s 1.5s infinite; /* Safari 4+ */
+  -moz-animation:    back 40s 1.5s infinite; /* Fx 5+ */ 
+  -o-animation:      back 40s 1.5s infinite; /* Opera 12+ */
+  animation:         back 40s 1.5s infinite; /* IE 10+, Fx 29+ */
+  
+  
+}
+/* The Keyframes*/
+@keyframes back {
+  0% {
+    background-image:  url("https://i.imgur.com/dY0CSDd.gif");
+  } 
+  6% {
+    background-image:  url("https://i.imgur.com/PP2XVBL.jpeg");
+  }
+  12%{
+    background-image: url("https://i.imgur.com/LuQI7Dz.jpeg");
+  }
+   18% {
+    background-image: url("https://i.imgur.com/qROZ4wZ.png");
+  }
+  24% {
+    background-image: url("https://i.imgur.com/D6Imtjo.jpeg");
+  }
+  
+  30%{
+    background-image: url("https://i.imgur.com/QE06iGe.gif");
+  }
+/* Animation Does Not End At 100% Because It Makes The Images Transition In/Out Better For Some Reason*/
+}
+
+
+.btn
+{
+  background-color: #; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+.btn:hover {
+  background-color: #;
+}
